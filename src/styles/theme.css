@@ -1,0 +1,15 @@
+:root{
+  --primary: #8d6748;         
+    --secondary: #a98467;      
+    --accent: #c9b29b;         
+    --background: #f5f3ea;     
+    --surface: #ede0d4;         
+    --text-primary: #4e342e;    
+    --text-secondary: #7c5e57;  
+
+    --isabelline: #edede9ff;
+    --timberwolf: #d6ccc2ff;
+    --linen: #f5ebe0ff;
+    --champagne-pink: #e3d5caff;
+    --pale-dogwood: #d5bdafff;
+}
