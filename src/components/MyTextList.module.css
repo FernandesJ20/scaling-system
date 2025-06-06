@@ -1,0 +1,15 @@
+.container {
+    padding: 3rem;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row; /* row column row-reverse column-reverse */
+    flex-wrap: wrap; /* nowrap wrap wrap-reverse */
+    gap: 3rem;
+
+    /* EIXO HORIZONTAL - Main Axis */
+    justify-content: center; /* flex-start flex-end center space-between space-around */
+    
+    /* EIXO VERTICAL - Cross Axis */
+    align-items: center; /* flex-start flex-end center baseline stretch */
+    align-content: center; /* flex-start flex-end center space-between space-around stretch */
+}

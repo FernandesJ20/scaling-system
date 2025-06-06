@@ -1,15 +1,13 @@
-import './App.css';
+import "./styles/theme.css";
+import "./styles/global.css";
+import { MyTextList } from "./components/MyTextList";
 
-function App() {
+export default function App() {
+
   return (
-    <div>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Est non mollitia modi reprehenderit velit ullam vel ut eveniet ipsa!
-         Veritatis facilis ratione dolorem aspernatur ea ipsa incidunt quo numquam doloribus!
-      </h1>
-    </div>
+    // React Fragment
+    <>
+      <MyTextList />
+    </>
   );
 }
-
-export default App;
