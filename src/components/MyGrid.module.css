@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+.main {
+  grid-area: main;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 21, 33, 255) 0%,
+    rgba(10, 20, 117, 255) 100%
+  );
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(auto-fit, min-content);
+  padding: 3rem;
+  gap: 3rem;
+}
+.card {
+  background-color: rgba(36, 99, 235, 255);
+  border-radius: 1rem;
+  color: rgba(255, 255, 255, 0.795);
+  box-shadow: 0.5rem 0.5rem 1rem rgb(0, 0, 0);
+  padding: 2rem;
+  font-size: 1.25rem;
+  height: 45rem;
+}
+.card h2 {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card img {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header1"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem auto 15rem;
+  min-height: 100vh;
+  @media (max-width: 1200px) {
+    grid-template-areas:
+      "header1"
+      "main"
+      "footer";
+    grid-template-columns: 100vw;
+    grid-template-rows: 10rem auto 10rem;
+    @media (max-width: 768px) {
+      grid-template-areas:
+        "header1"
+        "main"
+        "footer";
+      grid-template-columns: 100vw;
+      grid-template-rows: 20rem auto auto;
+    }
+  }
+}
+
+.header1 {
+  grid-area: header1;
+  background-color: rgba(15, 21, 33, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.header1 h1 {
+  display: flex;
+  font-weight: bolder;
+  font-size: 5rem;
+  color: rgb(37, 100, 234);
+  text-align: center;
+  align-items: center;
+  margin-left: 40px;
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
+}
+.header1 svg {
+  width: 6rem;
+  height: 6rem;
+  font-size: 6rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  color: rgba(36, 99, 235, 255);
+  @media (max-width: 768px) {
+    width: 12rem;
+    height: 12rem;
+    font-size: 12rem;
+    display: flex;
+  }
+}
+
+.header2 {
+  grid-area: header2;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgba(230, 233, 239, 255);
+  color: rgb(0, 0, 0);
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(36, 99, 235, 255);
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: 0rem 0rem 1rem var(--primary-dark);
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.icons button {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.icons a svg {
+  font-size: 2rem;
+  width: 2em;
+  height: 2em;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1200px) {
+  .icons a svg {
+    font-size: 1.5rem;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons a svg {
+    font-size: 2rem;
+    width: 4rem;
+    height: 2em;
+  }
+}
+
+.footerContent p {
+  color: rgb(37, 100, 234);
+  font-size: 5rem;
+  font-family: "Ephesis", cursive;
+  font-weight: bold;
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+    @media (max-width: 768px) {
+      font-size: 2.75rem;
+    }
+  }
+}
+.footerContent {
+ padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: rgb(0, 0, 0);
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footerText {
+  text-align: left;
+  @media (max-width: 1200px) {
+    font-size: 8px;
+    @media (max-width: 1000px) {
+      font-size: 6px;
+      @media (max-width: 768px) {
+        text-align: center;
+        font-size: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
