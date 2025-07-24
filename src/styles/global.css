@@ -17,29 +17,3 @@ body {
   background-color: var(--primary-dark);
   color: var(--primary-contrast);
 }
-.container {
-  display: grid;
-  grid-template-areas:
-    "header1"
-    "main"
-    "footer";
-  grid-template-columns: 1fr;
-  grid-template-rows: 10rem auto 15rem;
-  min-height: 100vh;
-  @media (max-width: 1200px) {
-    grid-template-areas:
-      "header1"
-      "main"
-      "footer";
-    grid-template-columns: 100vw;
-    grid-template-rows: 10rem auto 10rem;
-    @media (max-width: 768px) {
-      grid-template-areas:
-        "header1"
-        "main"
-        "footer";
-      grid-template-columns: 100vw;
-      grid-template-rows: 20rem auto auto;
-    }
-  }
-}
