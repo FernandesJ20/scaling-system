@@ -110,13 +110,13 @@ export function MyGrid() {
             <p>Artur Lima Melo</p>
           </div>
           <div className={styles.icons}>
-            <a href="https://github.com/ArturLimaMelo" target="_blank">
+            <a href="https://github.com/FernandesJ20" target="_blank">
               <Github />
             </a>
-            <a href="https://instagram.com/arturlima_m/" target="_blank">
+            <a href="https://www.instagram.com/juliaf17_" target="_blank">
               <Instagram />
             </a>
-            <a href="tel:+5584981536108" target="_blank">
+            <a href="tel:+55849999999" target="_blank">
               <Phone />
             </a>
           </div>
