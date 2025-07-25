@@ -107,7 +107,7 @@ export function MyGrid() {
             <h1>Programação para Internet 2025</h1>
           </div>
           <div>
-            <p>Artur Lima Melo</p>
+            <p>Júlia Fernandes</p>
           </div>
           <div className={styles.icons}>
             <a href="https://github.com/FernandesJ20" target="_blank">
