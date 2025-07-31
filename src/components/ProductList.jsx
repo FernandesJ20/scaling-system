@@ -2,7 +2,7 @@ import styles from "./ProductList.module.css";
 import { Product } from "./Product.jsx";
 import { CircularProgress } from "@mui/material";
 import { useContext } from "react";
-import { CartContext } from "../../service/CartContext";
+import { CartContext } from "../service/CartContext";
 
 export function ProductList() {
   const { products, loading, error } = useContext(CartContext);
