@@ -51,12 +51,13 @@
   padding: 1rem;
 }
 
-.cart button {
+.cart button, .cart a, .cart svg {
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: rgb(37, 100, 234);
   font-size: 3rem;
+  margin-right: 1rem;
 }
 
 .cart p {
