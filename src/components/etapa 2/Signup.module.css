@@ -1,0 +1,67 @@
+.SignupContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 21, 33, 255) 0%,
+    rgba(10, 20, 117, 255) 100%
+  );
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10rem;
+  min-height: 90vh;
+  color: rgb(37, 100, 234);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 10px;
+  color: rgb(37, 100, 234);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  font-size: 3rem;
+  background-color: rgb(17, 31, 80);
+  border: 1px solid rgb(32, 59, 156);
+  border-radius: 8px;
+}
+.signupForm input {
+  padding: 1rem;
+  background-color: rgb(13, 25, 70);
+  border: 1px solid rgb(32, 59, 156);
+  font-size: 1.5rem;
+  color: rgb(37, 100, 234);
+}
+.signupForm label {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: rgb(37, 100, 234);
+  font-weight: bold;
+}
+.signupForm button {
+  margin-top: 2rem;
+  background-color: rgb(23, 54, 121);
+  color: rgb(37, 100, 234);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.signupForm button:hover {
+  background-color: rgb(17, 59, 151);
+}
+
+.login {
+  font-size: 2rem;
+  color: rgb(37, 100, 234);
+  margin-bottom: 2rem;
+}

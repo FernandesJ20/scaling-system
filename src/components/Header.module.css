@@ -1,0 +1,73 @@
+.header1 {
+  grid-area: header1;
+  background-color: rgba(15, 21, 33, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  };
+
+  
+}
+.title {
+  display: flex;
+  font-weight: bolder;
+  font-size: 5rem;
+  color: rgb(37, 100, 234);
+  text-align: center;
+  margin-left: 40px;
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
+}
+.header1 svg {
+  width: 6rem;
+  height: 6rem;
+  font-size: 6rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  color: rgba(36, 99, 235, 255);
+  @media (max-width: 768px) {
+    width: 12rem;
+    height: 12rem;
+    font-size: 12rem;
+    display: flex;
+  }
+}
+.cart {
+  flex-direction: row;  
+  display: flex;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: rgb(37, 100, 234);
+  padding: 1rem;
+}
+
+.cart button, .cart a, .cart svg {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(37, 100, 234);
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.cart p {
+  display: inline-block;
+  background-color: rgb(17, 31, 80);
+  border: 1px solid rgb(37, 100, 234);
+  margin: 0.5rem;
+  padding: 5px;
+  border-radius: 1rem;
+  color: rgb(37, 100, 234);
+  font-size: 1.5rem;
+  height: 35px;
+}
