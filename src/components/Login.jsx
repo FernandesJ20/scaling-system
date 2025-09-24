@@ -1,7 +1,7 @@
 import styles from "./Login.module.css";
 import { Link, useNavigate } from "react-router";
 import { useState, useContext } from "react";
-import { CartContext } from "../../service/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 export function Login() {
     const [email, setEmail] = useState("");

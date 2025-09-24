@@ -2,7 +2,7 @@ import styles from "./ProductList.module.css";
 import { Product } from "./Product.jsx";
 import { CircularProgress } from "@mui/material";
 import { useContext, useRef, useState, useEffect } from "react";
-import { CartContext } from "../../service/CartContext";
+import { CartContext } from "../../context/CartContext";
 
 export function ProductList() {
   const { products, loading, error } = useContext(CartContext);
@@ -43,7 +43,7 @@ export function ProductList() {
         </div>
          {loading && (
         <div>
-          <CircularProgress
+          <CircularProgress   
             // size="sm"
             thickness={5}
             style={{ margin: "2rem auto", display: "block" }}

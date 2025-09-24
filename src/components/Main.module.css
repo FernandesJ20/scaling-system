@@ -1,0 +1,45 @@
+.main {
+  grid-area: main;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 21, 33, 255) 0%,
+    rgba(10, 20, 117, 255) 100%
+  );
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-rows: repeat(auto-fit, min-content);
+  padding: 3rem;
+  gap: 3rem;
+  height: calc(100vh- 20rem);
+}
+.card {
+  background-color: rgba(36, 99, 235, 255);
+  border-radius: 1rem;
+  color: rgba(255, 255, 255, 0.795);
+  box-shadow: 0.5rem 0.5rem 1rem rgb(0, 0, 0);
+  padding: 2rem;
+  font-size: 1.25rem;
+  height: 45rem;
+}
+.card h2 {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card img {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgb(0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
