@@ -1,6 +1,6 @@
 import "./styles/theme.css";
 import "./styles/global.css";
-import { Header } from "./components/Header";
+import { Header } from "./components/ Header";
 import { Routes, Route } from "react-router";
 import { CartProvider } from "./context/CartContext";
 import { Cart } from "./components/etapa2/Cart";
