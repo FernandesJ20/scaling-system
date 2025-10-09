@@ -14,7 +14,7 @@ export function Header() {
       <div className={styles.cart}>
         <Link to="/cart"><ShoppingBasket /></Link>
         { cart.length === 0 ? <h5></h5> : <p>{cart.length}</p>}
-        <Link to="/login"><CircleUserRound /></Link>
+        {useContext(CartContext).session != null ? <Link to="/user"><CircleUserRound /></Link> : <Link to="/login"><CircleUserRound /></Link>}
         <Link to="/stock"><Package /></Link>
       </div>
     </header>

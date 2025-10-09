@@ -107,16 +107,16 @@ export function MyGrid() {
             <h1>Programação para Internet 2025</h1>
           </div>
           <div>
-            <p>Artur Lima Melo</p>
+            <p>Júlia Fernandes</p>
           </div>
           <div className={styles.icons}>
-            <a href="https://github.com/ArturLimaMelo" target="_blank">
+            <a href="https://github.com/FernandesJ20" target="_blank">
               <Github />
             </a>
-            <a href="https://instagram.com/arturlima_m/" target="_blank">
+            <a href="https://instagram.com/juliaf17_/" target="_blank">
               <Instagram />
             </a>
-            <a href="tel:+5584981536108" target="_blank">
+            <a href="tel:+558498763317" target="_blank">
               <Phone />
             </a>
           </div>
