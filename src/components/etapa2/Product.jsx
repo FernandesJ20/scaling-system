@@ -1,60 +1,32 @@
-import styles from "./ProductList.module.css";
-import { Product } from "./Product.jsx";
-import { CircularProgress } from "@mui/material";
-import { useContext, useRef, useState, useEffect } from "react";
+import styles from "./Product.module.css";
+import { useState } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
-export function ProductList() {
-  const { products, loading, error } = useContext(CartContext);
-  
-  const searchInput = useRef(null);
-  var [filteredProducts, setFilteredProducts] = useState(products);
+export function Product({ product }) {
 
-  useEffect(() => {
-    setFilteredProducts(products);
-  }, [products]);
-
+  const { addToCart } = useContext(CartContext);
+  const [qty, setQty] = useState(0);
   return (
-    <div className={styles.container}>
-       <div className= {styles.main}>
-        <div className= {styles.search}>
-          <input 
-          type="text"
-          ref={searchInput}
-          placeholder="Search products..."
-          onChange={() => {
-            const query = searchInput.current.value.toLowerCase();
-            filteredProducts = products.filter(product =>
-              product.title.toLowerCase().includes(query) || 
-              product.description.toLowerCase().includes(query)
-            );
-            setFilteredProducts(filteredProducts);
-          }}
-          />
-          <button onClick={() => {
-            searchInput.current.value = "";
-            setFilteredProducts(products);
-          }}>Clear</button>
-        </div>
-       {filteredProducts.map((product) => (
-      <Product key={product.id} product={product}/>
-        
-        ))}
-        </div>
-         {loading && (
-        <div>
-          <CircularProgress   
-            // size="sm"
-            thickness={5}
-            style={{ margin: "2rem auto", display: "block" }}
-            sx={{
-              color: "#001111",
-            }}
-          />
-          <p>Loading products...</p>
-        </div>
-      )}
-      {error && <p>Error loading products: {error.message}</p>}
+    <div className={styles.productCard}>
+      <img
+        src={product.thumbnail}
+        alt={product.title}
+        className={styles.productImage}
+      />
+      <h2 className={styles.productTitle}>{product.title}</h2>
+      <p className={styles.productDescription}>{product.description}</p>
+      <div className={styles.productQty}>
+        { qty === 0 ? <p className={styles.productPrice}>${product.price}</p> : <p className={styles.productPrice}>${(product.price * qty).toFixed(2)}</p> }
+      </div>
+      <button
+        className={styles.productButton}
+        onClick={() => {
+          addToCart(product);
+        }}
+      >
+        ADD TO CART
+      </button>
     </div>
   );
 }
