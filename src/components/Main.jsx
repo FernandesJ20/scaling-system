@@ -1,16 +1,10 @@
-import styles from "./MyGrid.module.css";
+import styles from "./Main.module.css";
 import { Github, Instagram, Phone, BookOpenCheck } from "lucide-react";
 const cards = [0, 1, 2, 3, 4];
-export function MyGrid() {
-  // Desestruturação de props
+export function Main() {
   const randomNumbers = cards.map(() => Math.floor(Math.random() * 1000));
   return (
-    <div className={styles.container}>
-      <header className={styles.header1}>
-        <BookOpenCheck />
-        <h1>Foco, Força, Fé</h1>
-      </header>
-      <main className={styles.main}>
+    <main className={styles.main}>
         <div className={styles.grid}>
           {
             <div className={styles.card}>
@@ -99,29 +93,5 @@ export function MyGrid() {
           }
         </div>
       </main>
-      <footer className={styles.footer}>
-        <div className={styles.footerContent}>
-          <div className={styles.footerText}>
-            <h1>IFRN - Campus Macau</h1>
-            <h1>Curso Técnico em Informática</h1>
-            <h1>Programação para Internet 2025</h1>
-          </div>
-          <div>
-            <p>Júlia Fernandes</p>
-          </div>
-          <div className={styles.icons}>
-            <a href="https://github.com/FernandesJ20" target="_blank">
-              <Github />
-            </a>
-            <a href="https://instagram.com/juliaf17_/" target="_blank">
-              <Instagram />
-            </a>
-            <a href="tel:+558498763317" target="_blank">
-              <Phone />
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
   );
 }

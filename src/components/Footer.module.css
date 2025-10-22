@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+
+.icons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(36, 99, 235, 255);
+  border-radius: 2rem;
+  padding: 1rem;
+  box-shadow: 0rem 0rem 1rem var(--primary-dark);
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.icons button {
+  background-color: transparent;
+  border: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.icons a svg {
+  font-size: 2rem;
+  width: 2em;
+  height: 2em;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1200px) {
+  .icons a svg {
+    font-size: 1.5rem;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons a svg {
+    font-size: 2rem;
+    width: 4rem;
+    height: 2em;
+  }
+}
+.footerContent p {
+  color: rgb(37, 100, 234);
+  font-size: 5rem;
+  font-family: "Ephesis", cursive;
+  font-weight: bold;
+  @media (max-width: 1200px) {
+    font-size: 3rem;
+    @media (max-width: 768px) {
+      font-size: 2.75rem;
+    }
+  }
+}
+.footerContent {
+  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: rgb(0, 0, 0);
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footerText {
+  text-align: left;
+  @media (max-width: 1200px) {
+    font-size: 8px;
+    @media (max-width: 1000px) {
+      font-size: 6px;
+      @media (max-width: 768px) {
+        text-align: center;
+        font-size: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+.footer {
+  grid-area: footer;
+  background-color: rgba(230, 233, 239, 255);
+  color: rgb(0, 0, 0);
+  align-items: center;
+}
