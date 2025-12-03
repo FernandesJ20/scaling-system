@@ -1,24 +1,27 @@
 import "./styles/theme.css";
 import "./styles/global.css";
+
 import { Header } from "./components/Header";
 import { Routes, Route } from "react-router";
 import { CartProvider } from "./context/CartContext";
-import { Cart } from "./components/etapa2/Cart";
-import { ProductList } from "./components/etapa2/ProductList";
-import { Login } from "./components/etapa2/Login";
-import { Signup } from "./components/etapa2/Signup";
-import { Estoque } from "./components/etapa2/Estoque";
-import { ToastContainer } from 'react-toastify';
-import { User } from "./components/etapa2/user";
-import { SessionProvider} from "./context/SessionContext";
+import { Cart } from "./components/Cart";
+import { ProductList } from "./components/ProductList";
+import { Login } from "./components/Login.jsx";
+import { Signup } from "./components/Singup.jsx";
+import { Estoque } from "./components/Estoque";
+import { ToastContainer } from "react-toastify";
+import { User } from "./components/User";
+import { SessionProvider } from "./context/SessionContext";
 
 export default function App() {
   return (
     <>
       <ToastContainer />
+      
       <SessionProvider>
         <CartProvider>
           <Header />
+
           <Routes>
             <Route path="/" element={<ProductList />} />
             <Route path="/cart" element={<Cart />} />

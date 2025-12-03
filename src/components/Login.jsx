@@ -6,7 +6,7 @@ import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { toast, Bounce } from "react-toastify";
 import { CircularProgress } from "@mui/material";
 import { useNavigate } from "react-router";
-import { SessionContext } from "../../context/SessionContext";
+import { SessionContext } from "../context/SessionContext";
 
 export function Login({ value }) {
   // User Context

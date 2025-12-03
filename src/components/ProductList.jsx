@@ -1,5 +1,5 @@
 import styles from "./ProductList.module.css";
-import { Product } from "./Product.jsx";
+import { Product } from "./ etapa2/Product.jsx";
 import { CircularProgress } from "@mui/material";
 import { useContext, useRef, useState, useEffect } from "react";
 import { CartContext } from "../../context/CartContext";

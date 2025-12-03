@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
-import { SessionContext } from "../../context/SessionContext";
-import { CartContext } from "../../context/CartContext";
-import styles from "./user.module.css";
-import { supabase } from "../../utils/supabase";
+import { SessionContext } from "../context/SessionContext";
+import { CartContext } from "../context/CartContext";
+import styles from "./User.module.css";
+import { supabase } from "../utils/supabase";
 
 export function User() {
   const { session, handleSignOut } = useContext(SessionContext);
